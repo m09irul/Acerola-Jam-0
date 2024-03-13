@@ -1,0 +1,208 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8397795327738964685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8087111629801122046}
+  - component: {fileID: 3612727670456811175}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8087111629801122046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397795327738964685}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3612727670456811175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8397795327738964685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96e08ed4656a2d246943a76be6800245, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: bg_sound
+    clip: {fileID: 8300000, guid: 1565c8e1db470b941bc6638c8a0efeb0, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 71d042d32d01dc441bc0a7f3912e5de2,
+      type: 2}
+    volume: 1
+    pinch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: jump
+    clip: {fileID: 8300000, guid: a4ee9f078ad71b64f8ea5c33f9d1fdbe, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 1
+    pinch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: key
+    clip: {fileID: 8300000, guid: 11bc387317ec3a94c9d5e581d3f0f493, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 0.3
+    pinch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: dead
+    clip: {fileID: 8300000, guid: 5e6a67d6609f93e43b5c06dc0731043c, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 1
+    pinch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: button
+    clip: {fileID: 8300000, guid: 142441ef019bea6418a207d8b81d96ef, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 1
+    pinch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: MainMenu
+    clip: {fileID: 8300000, guid: b370d7377127178419fdb2e540dafe65, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 71d042d32d01dc441bc0a7f3912e5de2,
+      type: 2}
+    volume: 1
+    pinch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: loadTransition
+    clip: {fileID: 8300000, guid: bd86eacbf70e7a24d9024e868cde2e2e, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 1
+    pinch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: switchTransition
+    clip: {fileID: 8300000, guid: 6455e3b1e4c8e1543876f91419e13e16, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 1
+    pinch: 1.1
+    loop: 0
+    source: {fileID: 0}
+  - name: timer
+    clip: {fileID: 8300000, guid: df9976544ef1f1543b1d9904fe38f278, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 0.25
+    pinch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: chaos1
+    clip: {fileID: 8300000, guid: 348f348f09d8232458ab90cba007ac47, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 71d042d32d01dc441bc0a7f3912e5de2,
+      type: 2}
+    volume: 0.1
+    pinch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: chaos2
+    clip: {fileID: 8300000, guid: d680ab3e8002f7d488a86d72d5880466, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 71d042d32d01dc441bc0a7f3912e5de2,
+      type: 2}
+    volume: 0.1
+    pinch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: chaos3
+    clip: {fileID: 8300000, guid: 4be645bd1e89b0646a687b523c4c194c, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 71d042d32d01dc441bc0a7f3912e5de2,
+      type: 2}
+    volume: 0.1
+    pinch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: chaos4
+    clip: {fileID: 8300000, guid: da6c6b920b4a6c7459a9e26aa4babf1b, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 71d042d32d01dc441bc0a7f3912e5de2,
+      type: 2}
+    volume: 0.1
+    pinch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: chaos5
+    clip: {fileID: 8300000, guid: 9d4554948ba0a9b449f6e00ae2ef224d, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 71d042d32d01dc441bc0a7f3912e5de2,
+      type: 2}
+    volume: 0.1
+    pinch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: FinalChaos
+    clip: {fileID: 8300000, guid: d28de280d51aaa746b2a21099e617bfe, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 71d042d32d01dc441bc0a7f3912e5de2,
+      type: 2}
+    volume: 0.1
+    pinch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: bullet
+    clip: {fileID: 8300000, guid: 92d35fe1c59bbd14eaee9e3d3b54cea7, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 0.05
+    pinch: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - name: bomb
+    clip: {fileID: 8300000, guid: 947719fd38845824ba3638af9d8e4e54, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 0.2
+    pinch: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - name: blast
+    clip: {fileID: 8300000, guid: 929fd214252d7034d93c9463bf63e091, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 0.15
+    pinch: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - name: boss destroy
+    clip: {fileID: 8300000, guid: 25d8a6b3073dcbf40b0133fdbfeb55ce, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 0.3
+    pinch: 0.9
+    loop: 0
+    source: {fileID: 0}
+  - name: flicker
+    clip: {fileID: 8300000, guid: b22e8f440ee101b439564ef237029c06, type: 3}
+    masterMixtureGroup: {fileID: 24300002, guid: 03c548c1db7bd79488271b532a555f20,
+      type: 2}
+    volume: 0.6
+    pinch: 1
+    loop: 0
+    source: {fileID: 0}
+  gameOverClip: {fileID: 8300000, guid: 0c367dc9255088b4db5f4404706a3e3d, type: 3}
